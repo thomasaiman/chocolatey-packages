@@ -1,0 +1,14 @@
+﻿VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The installer has been downloaded from the todotxt.net project page on GitHub <https://github.com/benrhughes/todotxt.net/releases>
+You can get the version in this package from: https://github.com/benrhughes/todotxt.net/releases/download/v3.3.0/todotxt-setup-3.3.0.0.exe
+
+You can use one of the following methods to obtain the SHA256 checksum:
+- Use powershell function 'Get-FileHash'
+- Use Chocolatey utility 'checksum.exe'
+checksum: 7D2ACADE56164EF7E0396F0293EB8275554799BCFB2209C51EDD4622F9BA21B0
+
+
+FIle 'LICENSE.txt' is from: https://github.com/benrhughes/todotxt.net/blob/88b0f92b7d78316bdd95a47cd01894d821620707/BSD_LICENSE.txt

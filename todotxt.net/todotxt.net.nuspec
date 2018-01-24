@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Reference. Chocolatey uses a special version of NuGet.Core that allows us to do more than was initially possible. As such there are certain things to be aware of:
+
+* the package xmlns schema url may cause issues with nuget.exe
+* Any of the following elements can ONLY be used by choco tools - projectSourceUrl, docsUrl, mailingListUrl, bugTrackerUrl, packageSourceUrl, provides, conflicts, replaces 
+* nuget.exe can still install packages with those elements but they are ignored. Any authoring tools or commands will error on those elements 
+-->
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <id>todotxt.net</id>
+    <version>3.3.0</version>
+    <packageSourceUrl>https://github.com/thomasaiman/chocolatey-packages/todotxt.net</packageSourceUrl>
+    <owners>thomasaiman</owners>
+    <!-- ============================== -->
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <title>todotxt.net (Install)</title>
+    <authors>Ben Hughes</authors>
+    <projectUrl>http://benrhughes.github.io/todotxt.net/</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/benrhughes/todotxt.net/dev/Client/images/TodoTouch_512.ico</iconUrl>
+    <!-- <copyright></copyright> -->
+    <licenseUrl>https://github.com/benrhughes/todotxt.net/blob/dev/BSD_LICENSE.txt</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/benrhughes/todotxt.net</projectSourceUrl>
+    <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
+    <!--<mailingListUrl></mailingListUrl>-->
+    <!--<bugTrackerUrl></bugTrackerUrl>-->
+    <tags>todotxt.net todo todotxt todo.txt</tags>
+    <summary>This is an implemention of todo.txt using the .NET framework. As far as I am aware, it is fully compliant with Gina's spec.</summary>
+    <description><![CDATA[
+
+### todotxt.net
+
+This is an implemention of [todo.txt](http://todotxt.com/) using the .NET framework. As far as I am aware, it is fully compliant with [Gina's spec](https://github.com/ginatrapani/todo.txt-cli/wiki/The-Todo.txt-Format). 
+
+There is installer for the latest version available from the [the main site](http://benrhughes.github.io/todotxt.net/).
+
+#### Goals
+
+ - minimalist, keyboard-driven UI
+ - vim/gmail/twitter-like keyboard nav (single key, easily accessible)
+ - re-usable library that other projects can use as a todo.txt API
+ - API (but not UI) runs under Mono
+ - full compliance with Gina's specs
+
+
+#### Current features:
+
+ - Sorting by completed status, priority, project, context, alphabetically due date or the order in the file
+ - Sorting respects multiple projects and contexts
+ - Remembers preferences for the todo.txt file, sort order, window size and position
+ - Manual or automatic moving of completed tasks into an archive (done.txt) file
+ - Free text filtering/search
+ - Intellisense for projects and contexts
+ - Minimize to tray icon - double-click the icon or Win-Alt-T to hide or show the app
+ - Keyboard shortcuts:
+	- O or Ctrl+O: open todo.txt file
+	- C or Ctrl+N: new todo.txt file
+	- N: new task
+	- J: next task
+	- K: prev task
+	- X: toggle task completion
+	- A: archive tasks
+	- D or Del or Backspace: delete task (with confirmation)
+	- U or F2: update task
+    - T: append text to selected tasks
+	- F: filter tasks (free-text, one filter condition per line)
+	- I: set priority
+    - 0: clear filter
+    - 1-9: apply numbered filter preset
+	- . or F5: reload tasks from file
+	- ?: show help
+	- Alt+Up: increase priority
+	- Alt+Down: decrease priority
+	- Alt+Left/Right: clear priority
+ 	- Ctrl+Alt+Up: increase due date by 1 day
+	- Ctrl+Alt+Down: decrease due date by 1 day
+    - Ctrl+Alt+Left/Right: remove due date 
+	- Ctrl+C: copy task to clipboard
+	- Ctrl+Shift+C: copy task to edit field
+	- Ctrl+Alt+M: hide/unhide windows
+	]]></description>
+    <!-- <releaseNotes>__REPLACE_OR_REMOVE__MarkDown_Okay</releaseNotes> -->
+    <!-- =============================== -->      
+
+    <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
+    <!--<dependencies>
+      <dependency id="" version="__MINIMUM_VERSION__" />
+      <dependency id="" version="[__EXACT_VERSION__]" />
+      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_INCLUSIVE]" />
+      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_EXCLUSIVE)" />
+      <dependency id="" />
+      <dependency id="chocolatey-core.extension" version="1.1.0" />
+    </dependencies>-->
+    <!-- chocolatey-core.extension - https://chocolatey.org/packages/chocolatey-core.extension
+         - You want to use Get-UninstallRegistryKey on less than 0.9.10 (in chocolateyUninstall.ps1)
+         - You want to use Get-PackageParameters and on less than 0.11.0
+         - You want to take advantage of other functions in the core community maintainer's team extension package
+    -->
+
+    <!--<provides>NOT YET IMPLEMENTED</provides>-->
+    <!--<conflicts>NOT YET IMPLEMENTED</conflicts>-->
+    <!--<replaces>NOT YET IMPLEMENTED</replaces>-->
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
