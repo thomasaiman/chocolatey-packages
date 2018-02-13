@@ -13,7 +13,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>todotxt.net</id>
     <version>3.3.0</version>
-    <packageSourceUrl>https://github.com/thomasaiman/chocolatey-packages/todotxt.net</packageSourceUrl>
+    <packageSourceUrl>https://github.com/thomasaiman/chocolatey-packages/tree/master/todotxt.net</packageSourceUrl>
     <owners>thomasaiman</owners>
     <!-- ============================== -->
 
@@ -21,7 +21,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <title>todotxt.net (Install)</title>
     <authors>Ben Hughes</authors>
     <projectUrl>http://benrhughes.github.io/todotxt.net/</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/benrhughes/todotxt.net/dev/Client/images/TodoTouch_512.ico</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/thomasaiman/chocolatey-packages/c5b7ebf6/todotxt.net/TodoTouch_256.png</iconUrl>
     <!-- <copyright></copyright> -->
     <licenseUrl>https://github.com/benrhughes/todotxt.net/blob/dev/BSD_LICENSE.txt</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
