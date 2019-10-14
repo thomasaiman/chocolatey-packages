@@ -12,7 +12,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>todotxt.net</id>
-    <version>3.3.0</version>
+    <version>3.3.1</version>
     <packageSourceUrl>https://github.com/thomasaiman/chocolatey-packages/tree/master/todotxt.net</packageSourceUrl>
     <owners>thomasaiman</owners>
     <!-- ============================== -->

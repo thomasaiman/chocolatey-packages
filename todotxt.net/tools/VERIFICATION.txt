@@ -8,7 +8,7 @@ You can get the version in this package from: https://github.com/benrhughes/todo
 You can use one of the following methods to obtain the SHA256 checksum:
 - Use powershell function 'Get-FileHash'
 - Use Chocolatey utility 'checksum.exe'
-checksum: 7D2ACADE56164EF7E0396F0293EB8275554799BCFB2209C51EDD4622F9BA21B0
+checksum: 3470A0BF55FA69277B877E9EDD0F835593E7FD33A77B4DF41808D24AA06BA05D
 
 
 FIle 'LICENSE.txt' is from: https://github.com/benrhughes/todotxt.net/blob/88b0f92b7d78316bdd95a47cd01894d821620707/BSD_LICENSE.txt
